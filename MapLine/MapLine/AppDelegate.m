@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+#import "ProfileController.h"
 
 @implementation AppDelegate
 
@@ -26,8 +27,16 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
-    self.window.rootViewController = self.viewController;
+    UIViewController *viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
+    
+    UIViewController *profileController = [[[ProfileController alloc] initWithNibName:@"ProfileController" bundle:nil] autorelease];
+    
+    UITabBarController* tabBarController = [[UITabBarController alloc]init];
+    [tabBarController addChildViewController:viewController];
+    [tabBarController addChildViewController:profileController];
+    
+    
+    self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }

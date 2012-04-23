@@ -22,6 +22,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSLog(@"View controller est bien chargé");
 }
 
 - (void)viewDidUnload
