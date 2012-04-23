@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		140E85CC154611F80042F085 /* ProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140E85CA154611F80042F085 /* ProfileController.m */; };
 		140E85CD154611F80042F085 /* ProfileController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140E85CB154611F80042F085 /* ProfileController.xib */; };
+		140E85D215461B430042F085 /* ConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140E85D015461B430042F085 /* ConnectionViewController.m */; };
+		140E85D315461B430042F085 /* ConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140E85D115461B430042F085 /* ConnectionViewController.xib */; };
 		14FA29D9152DCF6200E201E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FA29D8152DCF6200E201E6 /* UIKit.framework */; };
 		14FA29DB152DCF6200E201E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FA29DA152DCF6200E201E6 /* Foundation.framework */; };
 		14FA29DD152DCF6200E201E6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FA29DC152DCF6200E201E6 /* CoreGraphics.framework */; };
@@ -23,6 +25,9 @@
 		140E85C9154611F80042F085 /* ProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileController.h; sourceTree = "<group>"; };
 		140E85CA154611F80042F085 /* ProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileController.m; sourceTree = "<group>"; };
 		140E85CB154611F80042F085 /* ProfileController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileController.xib; sourceTree = "<group>"; };
+		140E85CF15461B430042F085 /* ConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionViewController.h; sourceTree = "<group>"; };
+		140E85D015461B430042F085 /* ConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionViewController.m; sourceTree = "<group>"; };
+		140E85D115461B430042F085 /* ConnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectionViewController.xib; sourceTree = "<group>"; };
 		14FA29D4152DCF6200E201E6 /* MapLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14FA29D8152DCF6200E201E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		14FA29DA152DCF6200E201E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -91,6 +96,9 @@
 				140E85C9154611F80042F085 /* ProfileController.h */,
 				140E85CA154611F80042F085 /* ProfileController.m */,
 				140E85CB154611F80042F085 /* ProfileController.xib */,
+				140E85CF15461B430042F085 /* ConnectionViewController.h */,
+				140E85D015461B430042F085 /* ConnectionViewController.m */,
+				140E85D115461B430042F085 /* ConnectionViewController.xib */,
 			);
 			path = MapLine;
 			sourceTree = "<group>";
@@ -159,6 +167,7 @@
 				14FA29E3152DCF6200E201E6 /* InfoPlist.strings in Resources */,
 				14FA29EF152DCF6200E201E6 /* ViewController.xib in Resources */,
 				140E85CD154611F80042F085 /* ProfileController.xib in Resources */,
+				140E85D315461B430042F085 /* ConnectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +182,7 @@
 				14FA29E9152DCF6200E201E6 /* AppDelegate.m in Sources */,
 				14FA29EC152DCF6200E201E6 /* ViewController.m in Sources */,
 				140E85CC154611F80042F085 /* ProfileController.m in Sources */,
+				140E85D215461B430042F085 /* ConnectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
