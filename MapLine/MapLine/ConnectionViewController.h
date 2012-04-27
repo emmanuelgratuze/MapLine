@@ -16,5 +16,6 @@
 @property (retain, nonatomic) IBOutlet UILabel *errorLabel;
 
 - (IBAction)onSubmitClick:(id)sender;
+- (BOOL)checkIfUserIsRegistered:(NSString *)username :(NSString *)password;
 
 @end
