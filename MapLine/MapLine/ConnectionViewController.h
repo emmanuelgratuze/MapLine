@@ -10,6 +10,11 @@
 
 @interface ConnectionViewController : UIViewController
 
+@property (retain, nonatomic) IBOutlet UITextField *usernameField;
+@property (retain, nonatomic) IBOutlet UITextField *passwordField;
+
+@property (retain, nonatomic) IBOutlet UILabel *errorLabel;
+
 - (IBAction)onSubmitClick:(id)sender;
 
 @end

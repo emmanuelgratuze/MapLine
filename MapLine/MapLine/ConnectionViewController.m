@@ -10,6 +10,9 @@
 #import "AppDelegate.h"
 
 @implementation ConnectionViewController
+@synthesize usernameField = _usernameField;
+@synthesize passwordField = _passwordField;
+@synthesize errorLabel = _errorLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,11 +36,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    // On initialise errorLabel par ""
+    _errorLabel.text = @"";
 }
 
 - (void)viewDidUnload
 {
+    [self setUsernameField:nil];
+    [self setPasswordField:nil];
+    [self setErrorLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -50,7 +57,21 @@
 }
 
 - (IBAction)onSubmitClick:(id)sender {
-    NSLog(@"coucou");
     
+    if([_usernameField.text isEqualToString: @""] || [_passwordField.text isEqualToString:@""]) {
+        _errorLabel.text = @"Les deux champs sont obligatoires";
+        NSLog(@"AH + %@",_usernameField.text);
+    }
+    else {
+        _errorLabel.text = @"Champs bien précisés";
+        
+    }
+    
+}
+- (void)dealloc {
+    [_usernameField release];
+    [_passwordField release];
+    [_errorLabel release];
+    [super dealloc];
 }
 @end
