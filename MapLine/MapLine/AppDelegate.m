@@ -7,9 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
-#import "ViewController.h"
-#import "ProfileController.h"
+#import "MainViewController.h"
 #import "ConnectionViewController.h"
 
 @implementation AppDelegate
@@ -29,39 +27,15 @@
     
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     
-    // On récupère l'username Mapline pour vérifier s'il existe
-    NSString *username = [[NSUserDefaults standardUserDefaults] stringForKey:@"mapLineUsername"];
+    MainViewController *mainViewController = [[[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil] autorelease];
     
-    if(username) {
-        // L'utilisateur s'est déjà connecté et son username est déjà enregistré dans NSUserDefault
-        
-        
-        // Override point for customization after application launch.
-        UIViewController *viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
-        
-        UIViewController *profileController = [[[ProfileController alloc] initWithNibName:@"ProfileController" bundle:nil] autorelease];
-        
-        UITabBarController* tabBarController = [[UITabBarController alloc]init];
-        [tabBarController addChildViewController:viewController];
-        [tabBarController addChildViewController:profileController];
-        
-        
-        self.window.rootViewController = tabBarController;
-        [self.window makeKeyAndVisible];
-        return YES;
-        
-    }
-    else {
-        // L'utilisateur ne s'est jamais connecté ou s'est déconnecté
-        
-        UIViewController *connectionViewController = [[[ConnectionViewController alloc] initWithNibName:@"ConnectionViewController" bundle:nil] autorelease];
-        
-        self.window.rootViewController = connectionViewController;
-        [self.window makeKeyAndVisible];
-        return YES;
-        
-        NSLog(@"%@",username);
-    }
+    
+    
+    //UINavigationController *rootNavigationController= [[[UINavigationController alloc] initWithNibName:@"MainViewController" bundle:nil] autorelease];
+    
+    self.window.rootViewController = mainViewController;
+    [self.window makeKeyAndVisible];
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

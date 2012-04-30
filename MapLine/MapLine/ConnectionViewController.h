@@ -7,15 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MainViewController.h"
 
-@interface ConnectionViewController : UIViewController
+@protocol ConnectionViewDelegate;
+
+@interface ConnectionViewController : UIViewController {
+    id<ConnectionViewDelegate> delegate;
+}
 
 @property (retain, nonatomic) IBOutlet UITextField *usernameField;
 @property (retain, nonatomic) IBOutlet UITextField *passwordField;
-
 @property (retain, nonatomic) IBOutlet UILabel *errorLabel;
+@property (nonatomic, assign) id<ConnectionViewDelegate> delegate;
 
 - (IBAction)onSubmitClick:(id)sender;
-- (BOOL)checkIfUserIsRegistered:(NSString *)username :(NSString *)password;
+- (NSString *)checkIfUserIsRegistered:(NSString *)username :(NSString *)password;
 
 @end

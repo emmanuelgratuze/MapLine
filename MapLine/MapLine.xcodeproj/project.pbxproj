@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		140E85CC154611F80042F085 /* ProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140E85CA154611F80042F085 /* ProfileController.m */; };
-		140E85CD154611F80042F085 /* ProfileController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140E85CB154611F80042F085 /* ProfileController.xib */; };
+		140E85CC154611F80042F085 /* UserProfileViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 140E85CA154611F80042F085 /* UserProfileViewController1.m */; };
+		140E85CD154611F80042F085 /* UserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140E85CB154611F80042F085 /* UserProfileViewController.xib */; };
 		140E85D215461B430042F085 /* ConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140E85D015461B430042F085 /* ConnectionViewController.m */; };
 		140E85D315461B430042F085 /* ConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140E85D115461B430042F085 /* ConnectionViewController.xib */; };
+		1429F4EC154CB8E500A0196A /* MainUserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1429F4EA154CB8E500A0196A /* MainUserProfileViewController.m */; };
+		1429F4ED154CB8E500A0196A /* MainUserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1429F4EB154CB8E500A0196A /* MainUserProfileViewController.xib */; };
 		145FC0E8154AFE84005495D6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145FC0E7154AFE84005495D6 /* MobileCoreServices.framework */; };
 		145FC0EB154AFE9A005495D6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145FC0EA154AFE9A005495D6 /* SystemConfiguration.framework */; };
 		145FC0ED154AFEA5005495D6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145FC0EC154AFEA5005495D6 /* CFNetwork.framework */; };
@@ -30,23 +32,30 @@
 		145FC11F154B0196005495D6 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 145FC10F154B0196005495D6 /* ASIInputStream.m */; };
 		145FC120154B0196005495D6 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 145FC111154B0196005495D6 /* ASINetworkQueue.m */; };
 		145FC123154B089D005495D6 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 145FC121154B089D005495D6 /* Reachability.m */; };
+		14CD2843154C55F700E70CD8 /* UserSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CD2841154C55F700E70CD8 /* UserSearchViewController.m */; };
+		14CD2844154C55F700E70CD8 /* UserSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CD2842154C55F700E70CD8 /* UserSearchViewController.xib */; };
+		14DD2EEF154E344D00F6CF2C /* UserMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DD2EED154E344C00F6CF2C /* UserMapViewController.m */; };
+		14DD2EF0154E344D00F6CF2C /* UserMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14DD2EEE154E344D00F6CF2C /* UserMapViewController.xib */; };
 		14FA29D9152DCF6200E201E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FA29D8152DCF6200E201E6 /* UIKit.framework */; };
 		14FA29DB152DCF6200E201E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FA29DA152DCF6200E201E6 /* Foundation.framework */; };
 		14FA29DD152DCF6200E201E6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FA29DC152DCF6200E201E6 /* CoreGraphics.framework */; };
 		14FA29E3152DCF6200E201E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14FA29E1152DCF6200E201E6 /* InfoPlist.strings */; };
 		14FA29E5152DCF6200E201E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FA29E4152DCF6200E201E6 /* main.m */; };
 		14FA29E9152DCF6200E201E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FA29E8152DCF6200E201E6 /* AppDelegate.m */; };
-		14FA29EC152DCF6200E201E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FA29EB152DCF6200E201E6 /* ViewController.m */; };
-		14FA29EF152DCF6200E201E6 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14FA29ED152DCF6200E201E6 /* ViewController.xib */; };
+		14FA29EC152DCF6200E201E6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FA29EB152DCF6200E201E6 /* MainViewController.m */; };
+		14FA29EF152DCF6200E201E6 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14FA29ED152DCF6200E201E6 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		140E85C9154611F80042F085 /* ProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileController.h; sourceTree = "<group>"; };
-		140E85CA154611F80042F085 /* ProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileController.m; sourceTree = "<group>"; };
-		140E85CB154611F80042F085 /* ProfileController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileController.xib; sourceTree = "<group>"; };
+		140E85C9154611F80042F085 /* UserProfileViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserProfileViewController1.h; path = MapLine/UserProfileViewController1.h; sourceTree = "<group>"; };
+		140E85CA154611F80042F085 /* UserProfileViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserProfileViewController1.m; path = MapLine/UserProfileViewController1.m; sourceTree = "<group>"; };
+		140E85CB154611F80042F085 /* UserProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserProfileViewController.xib; path = MapLine/UserProfileViewController.xib; sourceTree = "<group>"; };
 		140E85CF15461B430042F085 /* ConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionViewController.h; sourceTree = "<group>"; };
 		140E85D015461B430042F085 /* ConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionViewController.m; sourceTree = "<group>"; };
 		140E85D115461B430042F085 /* ConnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectionViewController.xib; sourceTree = "<group>"; };
+		1429F4E9154CB8E400A0196A /* MainUserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainUserProfileViewController.h; sourceTree = "<group>"; };
+		1429F4EA154CB8E500A0196A /* MainUserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainUserProfileViewController.m; sourceTree = "<group>"; };
+		1429F4EB154CB8E500A0196A /* MainUserProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainUserProfileViewController.xib; sourceTree = "<group>"; };
 		145FC0E7154AFE84005495D6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		145FC0EA154AFE9A005495D6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		145FC0EC154AFEA5005495D6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -86,6 +95,12 @@
 		145FC112154B0196005495D6 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
 		145FC121154B089D005495D6 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		145FC122154B089D005495D6 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		14CD2840154C55F700E70CD8 /* UserSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSearchViewController.h; sourceTree = "<group>"; };
+		14CD2841154C55F700E70CD8 /* UserSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSearchViewController.m; sourceTree = "<group>"; };
+		14CD2842154C55F700E70CD8 /* UserSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserSearchViewController.xib; sourceTree = "<group>"; };
+		14DD2EEC154E344C00F6CF2C /* UserMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserMapViewController.h; sourceTree = "<group>"; };
+		14DD2EED154E344C00F6CF2C /* UserMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMapViewController.m; sourceTree = "<group>"; };
+		14DD2EEE154E344D00F6CF2C /* UserMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserMapViewController.xib; sourceTree = "<group>"; };
 		14FA29D4152DCF6200E201E6 /* MapLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14FA29D8152DCF6200E201E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		14FA29DA152DCF6200E201E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -96,9 +111,9 @@
 		14FA29E6152DCF6200E201E6 /* MapLine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapLine-Prefix.pch"; sourceTree = "<group>"; };
 		14FA29E7152DCF6200E201E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14FA29E8152DCF6200E201E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		14FA29EA152DCF6200E201E6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		14FA29EB152DCF6200E201E6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		14FA29EE152DCF6200E201E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		14FA29EA152DCF6200E201E6 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		14FA29EB152DCF6200E201E6 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		14FA29EE152DCF6200E201E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +134,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1429F4EE154CB90900A0196A /* LAST */ = {
+			isa = PBXGroup;
+			children = (
+				140E85C9154611F80042F085 /* UserProfileViewController1.h */,
+				140E85CA154611F80042F085 /* UserProfileViewController1.m */,
+				140E85CB154611F80042F085 /* UserProfileViewController.xib */,
+			);
+			name = LAST;
+			sourceTree = "<group>";
+		};
 		145FC0F0154B0196005495D6 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +196,7 @@
 		14FA29C9152DCF6200E201E6 = {
 			isa = PBXGroup;
 			children = (
+				1429F4EE154CB90900A0196A /* LAST */,
 				145FC121154B089D005495D6 /* Reachability.m */,
 				145FC122154B089D005495D6 /* Reachability.h */,
 				145FC0F0154B0196005495D6 /* JSON */,
@@ -208,16 +234,22 @@
 			children = (
 				14FA29E7152DCF6200E201E6 /* AppDelegate.h */,
 				14FA29E8152DCF6200E201E6 /* AppDelegate.m */,
-				14FA29EA152DCF6200E201E6 /* ViewController.h */,
-				14FA29EB152DCF6200E201E6 /* ViewController.m */,
-				14FA29ED152DCF6200E201E6 /* ViewController.xib */,
+				14FA29EB152DCF6200E201E6 /* MainViewController.m */,
+				14FA29EA152DCF6200E201E6 /* MainViewController.h */,
+				14FA29ED152DCF6200E201E6 /* MainViewController.xib */,
 				14FA29DF152DCF6200E201E6 /* Supporting Files */,
-				140E85C9154611F80042F085 /* ProfileController.h */,
-				140E85CA154611F80042F085 /* ProfileController.m */,
-				140E85CB154611F80042F085 /* ProfileController.xib */,
 				140E85CF15461B430042F085 /* ConnectionViewController.h */,
 				140E85D015461B430042F085 /* ConnectionViewController.m */,
 				140E85D115461B430042F085 /* ConnectionViewController.xib */,
+				14CD2840154C55F700E70CD8 /* UserSearchViewController.h */,
+				14CD2841154C55F700E70CD8 /* UserSearchViewController.m */,
+				14CD2842154C55F700E70CD8 /* UserSearchViewController.xib */,
+				1429F4E9154CB8E400A0196A /* MainUserProfileViewController.h */,
+				1429F4EA154CB8E500A0196A /* MainUserProfileViewController.m */,
+				1429F4EB154CB8E500A0196A /* MainUserProfileViewController.xib */,
+				14DD2EEC154E344C00F6CF2C /* UserMapViewController.h */,
+				14DD2EED154E344C00F6CF2C /* UserMapViewController.m */,
+				14DD2EEE154E344D00F6CF2C /* UserMapViewController.xib */,
 			);
 			path = MapLine;
 			sourceTree = "<group>";
@@ -284,9 +316,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				14FA29E3152DCF6200E201E6 /* InfoPlist.strings in Resources */,
-				14FA29EF152DCF6200E201E6 /* ViewController.xib in Resources */,
-				140E85CD154611F80042F085 /* ProfileController.xib in Resources */,
+				14FA29EF152DCF6200E201E6 /* MainViewController.xib in Resources */,
+				140E85CD154611F80042F085 /* UserProfileViewController.xib in Resources */,
 				140E85D315461B430042F085 /* ConnectionViewController.xib in Resources */,
+				14CD2844154C55F700E70CD8 /* UserSearchViewController.xib in Resources */,
+				1429F4ED154CB8E500A0196A /* MainUserProfileViewController.xib in Resources */,
+				14DD2EF0154E344D00F6CF2C /* UserMapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,8 +334,8 @@
 			files = (
 				14FA29E5152DCF6200E201E6 /* main.m in Sources */,
 				14FA29E9152DCF6200E201E6 /* AppDelegate.m in Sources */,
-				14FA29EC152DCF6200E201E6 /* ViewController.m in Sources */,
-				140E85CC154611F80042F085 /* ProfileController.m in Sources */,
+				14FA29EC152DCF6200E201E6 /* MainViewController.m in Sources */,
+				140E85CC154611F80042F085 /* UserProfileViewController1.m in Sources */,
 				140E85D215461B430042F085 /* ConnectionViewController.m in Sources */,
 				145FC113154B0196005495D6 /* NSObject+SBJSON.m in Sources */,
 				145FC114154B0196005495D6 /* NSString+SBJSON.m in Sources */,
@@ -317,6 +352,9 @@
 				145FC11F154B0196005495D6 /* ASIInputStream.m in Sources */,
 				145FC120154B0196005495D6 /* ASINetworkQueue.m in Sources */,
 				145FC123154B089D005495D6 /* Reachability.m in Sources */,
+				14CD2843154C55F700E70CD8 /* UserSearchViewController.m in Sources */,
+				1429F4EC154CB8E500A0196A /* MainUserProfileViewController.m in Sources */,
+				14DD2EEF154E344D00F6CF2C /* UserMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,12 +369,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		14FA29ED152DCF6200E201E6 /* ViewController.xib */ = {
+		14FA29ED152DCF6200E201E6 /* MainViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				14FA29EE152DCF6200E201E6 /* en */,
 			);
-			name = ViewController.xib;
+			name = MainViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

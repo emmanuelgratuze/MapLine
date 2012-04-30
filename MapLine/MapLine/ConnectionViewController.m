@@ -9,11 +9,13 @@
 #import "ConnectionViewController.h"
 #import "ASIHTTPRequest.h"
 #import "ASIFormDataRequest.h"
+#import "MainViewController.h"
 
 @implementation ConnectionViewController
 @synthesize usernameField = _usernameField;
 @synthesize passwordField = _passwordField;
 @synthesize errorLabel = _errorLabel;
+@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -71,32 +73,39 @@
         NSString *username = _usernameField.text;
         NSString *password = _passwordField.text;
         
-        BOOL permission = [self checkIfUserIsRegistered:username :password];
-        NSLog(@"%@", permission ? @"YES" : @"NO");
+        NSString *userId = [self checkIfUserIsRegistered:username :password];
+        //NSLog(@"%@", permission ? @"YES" : @"NO");
         
+        if([userId isEqualToString:@"false"]) {
+            _errorLabel.text = @"Le nom d'utilisateur ou le mot de passe est incorrect";
+        }
+        else {
+            [self.delegate displayUserProfile:userId];
+            [self dismissModalViewControllerAnimated:YES];
+        }
         
     }
     
 }
 
-- (BOOL)checkIfUserIsRegistered:(NSString *)username :(NSString *)password {
+- (NSString *)checkIfUserIsRegistered:(NSString *)username :(NSString *)password {
     
-    BOOL result;
+    NSString *result;
     
     NSURL *url = [NSURL URLWithString:@"http://emmanuelgratuze.com/autres/MapLine/getAccess.php"];
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
     [request setPostValue:_usernameField.text forKey:@"username"];
     [request setPostValue:_passwordField.text forKey:@"password"];
-    
     [request startSynchronous];
+    
     NSError *error = [request error];
     if (!error) {
         NSString *response = [request responseString];
-        if([response isEqualToString: @"true"]) {
-            result = YES;
+        if([response isEqualToString: @"false"]) {
+            result = @"false";
         }
         else {
-            result = NO;
+            result = response;
         }
     }
     else {
@@ -110,6 +119,7 @@
     [_usernameField release];
     [_passwordField release];
     [_errorLabel release];
+    [delegate release];
     [super dealloc];
 }
 @end
